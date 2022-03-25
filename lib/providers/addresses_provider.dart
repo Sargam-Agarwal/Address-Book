@@ -26,12 +26,14 @@ class AddressesProvider with ChangeNotifier {
   Future<void> fetchStoredData() async {
     final dataMapList = await DBHelper.getData();
     _items = dataMapList
-        .map((dataMap) => Address(
-              id: dataMap['id'],
-              title: dataMap['title'],
-              address: dataMap['address'],
-              image: File(dataMap['image']),
-            ))
+        .map(
+          (dataMap) => Address(
+            id: dataMap['id'] as String,
+            title: dataMap['title'] as String,
+            address: dataMap['address'] as String,
+            image: File(dataMap['image'] as String),
+          ),
+        )
         .toList();
     notifyListeners();
   }

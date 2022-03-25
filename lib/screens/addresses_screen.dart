@@ -38,7 +38,7 @@ class _AddressesScreenState extends State<AddressesScreen> {
                   child: Text('No addresses yet! Add some!'),
                 ),
                 builder: (ctx, addresses, child) => addresses.items.length <= 0
-                    ? child
+                    ? child!
                     : ListView.builder(
                         itemCount: addresses.items.length,
                         itemBuilder: (ctx, i) => AddressCard(

@@ -6,5 +6,9 @@ class Address {
   final String address;
   final File image;
 
-  Address({this.id, this.title, this.address, this.image});
+  Address(
+      {required this.id,
+      required this.title,
+      required this.address,
+      required this.image});
 }

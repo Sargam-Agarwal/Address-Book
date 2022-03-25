@@ -18,7 +18,7 @@ class _AddAddressState extends State<AddAddress> {
   final _titleController = TextEditingController();
   final _addressController = TextEditingController();
 
-  File _image;
+  late File _image;
 
   void _saveImage(File pickedImage) {
     _image = pickedImage;

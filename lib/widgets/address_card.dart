@@ -8,7 +8,11 @@ class AddressCard extends StatelessWidget {
   final String address;
   final File image;
 
-  AddressCard({this.id, this.title, this.address, this.image});
+  AddressCard(
+      {required this.id,
+      required this.title,
+      required this.address,
+      required this.image});
 
   @override
   Widget build(BuildContext context) {

@@ -16,7 +16,7 @@ class ImageInput extends StatefulWidget {
 }
 
 class _ImageInputState extends State<ImageInput> {
-  File _pickedImage;
+  File? _pickedImage;
 
   Future<void> _clickImage() async {
     final clickedImage = await ImagePicker()
@@ -29,10 +29,10 @@ class _ImageInputState extends State<ImageInput> {
       _pickedImage = File(clickedImage.path);
     });
 
-    final imageFileBaseName = basename(_pickedImage.path);
+    final imageFileBaseName = basename(_pickedImage!.path);
     final appDir = await getApplicationDocumentsDirectory();
     final pathName = appDir.path;
-    _pickedImage.copy('$pathName/$imageFileBaseName');
+    _pickedImage!.copy('$pathName/$imageFileBaseName');
     widget._saveImage(_pickedImage);
   }
 
@@ -50,7 +50,7 @@ class _ImageInputState extends State<ImageInput> {
                   textAlign: TextAlign.center,
                 )
               : Image.file(
-                  _pickedImage,
+                  _pickedImage!,
                   fit: BoxFit.cover,
                   width: double.infinity,
                 ),
