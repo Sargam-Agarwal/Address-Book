@@ -47,4 +47,4 @@ So, if you resonate with this, then continue reading on how you can do your part
 Any kind of contribution that helps improve this project is welcome. Make sure to read the Contribution Guide before contributing to the project.
 
 ## 🎗 Code Of Conduct 
-Check out the code of conduct [here](https://github.com/Sargam-Agarwal/Address-Book/blob/master/CODE_OF_CONDUCT.md)
+You can find the code of conduct [here](https://github.com/Sargam-Agarwal/Address-Book/blob/master/CODE_OF_CONDUCT.md)
