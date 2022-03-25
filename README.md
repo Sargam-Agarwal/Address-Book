@@ -1,6 +1,6 @@
 # Address Book App
 
-Address Book let's the user add and save all the relevant addresses at one place in his/her mobile. 
+A simple Flutter App that let's the user add and save all the relevant addresses at one place in their mobile device.
 
 * Display all the addresses. Add the address clicking on '+' icon on the app bar.
 
