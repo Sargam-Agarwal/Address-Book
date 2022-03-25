@@ -11,6 +11,7 @@ So, if you resonate with this, then continue reading on how you can do your part
 * [Flutter](https://flutter.dev/) (framework for the development of UI)
 * [provider](https://pub.dev/packages/provider) (flutter package for app wide state management)
 * [sqflite](https://pub.dev/packages/sqflite) (SQLite plugin for Flutter)
+* [image_picker](https://pub.dev/packages/image_picker) (flutter plugin for clicking image or selecting one from the gallery)
 
 ## ▶️ App Preview
 * Display all the addresses. Add the address clicking on '+' icon on the app bar.
