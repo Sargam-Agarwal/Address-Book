@@ -6,7 +6,7 @@ My motivation behind working on this app !? In simple words, I didn't want my fr
 
 So, if you resonate with this, then continue reading on how you can do your part by contributing to this project 🤖🚀  
 
-## 🎮 Technoligies Used
+## 🎮 Technologies Used
 * [Dart](https://dart.dev/) (coding language used for this project)
 * [Flutter](https://flutter.dev/) (framework for the development of UI)
 * [provider](https://pub.dev/packages/provider) (flutter package for app wide state management)
