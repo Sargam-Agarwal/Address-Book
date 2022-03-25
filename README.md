@@ -45,3 +45,6 @@ So, if you resonate with this, then continue reading on how you can do your part
 
 ## 🎯 How To Contribute
 Any kind of contribution that helps improve this project is welcome. Make sure to read the Contribution Guide before contributing to the project.
+
+## 🎗 Code Of Conduct 
+Check out our code of conduct [here]()
