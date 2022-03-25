@@ -19,8 +19,8 @@ class _ImageInputState extends State<ImageInput> {
   File _pickedImage;
 
   Future<void> _clickImage() async {
-    final clickedImage =
-        await ImagePicker().getImage(source: ImageSource.camera, maxWidth: 600);
+    final clickedImage = await ImagePicker()
+        .pickImage(source: ImageSource.camera, maxWidth: 600);
 
     if (clickedImage == null) {
       return;
@@ -58,7 +58,7 @@ class _ImageInputState extends State<ImageInput> {
         ),
         SizedBox(width: 10),
         Expanded(
-          child: FlatButton.icon(
+          child: TextButton.icon(
             icon: Icon(Icons.camera),
             onPressed: _clickImage,
             label: Text('Take picture'),

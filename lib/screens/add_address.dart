@@ -5,7 +5,6 @@ import '../widgets/image_input.dart';
 import 'package:provider/provider.dart';
 import '../providers/addresses_provider.dart';
 import '../models/address.dart';
-import '../models/dbHelper.dart';
 
 class AddAddress extends StatefulWidget {
   static const routeName = '/add-address';
@@ -65,11 +64,13 @@ class _AddAddressState extends State<AddAddress> {
               ]),
             ),
           ),
-          RaisedButton.icon(
-            materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          ElevatedButton.icon(
+            style: ButtonStyle(
+              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              backgroundColor: MaterialStateProperty.all(Colors.amber),
+            ),
             icon: Icon(Icons.add),
             label: Text('Add this address'),
-            color: Colors.amber,
             onPressed: _addAddress,
           ),
         ],
